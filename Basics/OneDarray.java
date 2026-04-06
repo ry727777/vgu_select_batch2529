@@ -1,3 +1,4 @@
+package Basics;
 import java.util.Scanner;
 
 public class OneDarray {
@@ -12,14 +13,22 @@ public class OneDarray {
             temp[i] = sc.nextInt();
         }
 
-        System.out.print("Print the array: ");
+        // System.out.print("Print the array: ");
         // for(int i=0; i<n; i++){
         //     System.out.print(temp[i]+" ");
         // }
 
         // for each loop
-        for(int ele:temp){
-            System.out.print(ele + " ");
+        // for(int ele:temp){
+        //     System.out.print(ele + " ");
+        // }
+
+        // Sum of all element array
+        System.out.println("Sum of all element i array: ");
+        int sum = 0;
+        for(int i=0; i<n; i++){
+            sum += temp[i];
         }
+
     }
 }
