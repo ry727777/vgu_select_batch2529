@@ -9,7 +9,7 @@ public class Jagged_arrya {
         int[][] class_room = new int[row][];
 
         for(int i=0; i<row; i++){
-            System.out.println("Number of student in class: "+(i+1)+ " ");
+            System.out.print("Number of student in class: "+(i+1)+ " ");
             int stude = sc.nextInt();
             class_room[i] = new int[stude];
         }
@@ -22,7 +22,7 @@ public class Jagged_arrya {
         }
 
         // calculate avg CGPA
-        
+
     }
     
 }
