@@ -7,7 +7,7 @@ public class InsertDelete {
 
     // insertion in Data Structure array
     public void insertBeg(int value) {
-
+        // O(n) time complexity (n -> size of array)
         if (size >= 100) {
             System.out.println("Array is full now");
             return;
@@ -88,6 +88,7 @@ public class InsertDelete {
 
     // Traversal of array data structure (Read the array)
     public void traverseArray() {
+        // O(n) time complexity (n -> size of array)
         for (int i = 0; i < size; i++) {
             System.out.print(Elements[i] + " ");
         }
@@ -96,11 +97,15 @@ public class InsertDelete {
     public static void main(String[] args) {
         InsertDelete obj = new InsertDelete();
 
-        obj.insertBeg(100);
-        obj.insertEnd(20);
-        obj.insertBeg(50);
-        obj.insertAtIndex(200, 2);
-
+        // obj.insertBeg(100);
+        // obj.insertEnd(20);
+        // obj.insertBeg(50);
+        // obj.insertAtIndex(200, 2);
+        obj.deleteBeg();
+        obj.insertBeg(20);
+        obj.deleteBeg();
+        System.out.println(obj.size);
+        System.out.println(obj.start);
         obj.traverseArray();
     }
 }
